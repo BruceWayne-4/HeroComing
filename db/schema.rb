@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 20161115141757) do
   enable_extension "plpgsql"
 
   create_table "admins", force: :cascade do |t|
-    t.string   "mobile"
+    t.string   "mobile",          null: false
     t.string   "password_digest"
-    t.string   "nick_name"
-    t.string   "real_name"
+    t.string   "nick_name",       null: false
+    t.string   "real_name",       null: false
     t.string   "auth_token"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
