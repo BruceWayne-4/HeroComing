@@ -1,4 +1,20 @@
-= form_tag backend_signing_path
-  = text_field_tag :mobile, params[:mobile]
-  = password_field_tag :password, params[:password]
-  = submit_tag t('sign')
+section#backend-sessions-sign
+  = form_tag backend_signing_path, class: 'form-horizontal'
+    .container
+      fieldset
+        legend.text-center Sign
+
+        .form-group
+          label.col-lg-5.control-label for="mobile"  Mobile
+          .col-lg-4
+            = text_field_tag :mobile, params[:mobile], class: 'form-control', id: 'mobile', placeholder: 'mobile'
+
+        .form-group
+          label.col-lg-5.control-label for="password"  Password
+          .col-lg-4
+            = password_field_tag :password, params[:password], class: 'form-control', id: 'password', placeholder: 'password'
+
+        .form-group
+          .col-lg-7.col-lg-offset-5
+            button.btn.btn-default.btn-split type="reset"  Cancel
+            button.btn.btn-primary type="submit"  Submit
