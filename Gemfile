@@ -26,5 +26,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-nav'
 end
-
 gem 'slim-rails'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+end
