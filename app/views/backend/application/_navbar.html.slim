@@ -10,7 +10,7 @@ section.admin-application-navbar
         a.navbar-brand href="#"  英雄来了
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         ul.nav.navbar-nav
-          li class="#{ controller_name == 'home' ? 'active' : ''}"
+          li class== navbar_class('home')
             a href== backend_root_path 控制面板
           li.dropdown
             a.dropdown-toggle data-toggle="dropdown" href="#"
