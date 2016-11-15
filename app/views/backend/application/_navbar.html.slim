@@ -10,6 +10,8 @@ section.admin-application-navbar
         a.navbar-brand href="#"  英雄来了
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         ul.nav.navbar-nav
+          li class="#{ controller_name == 'home' ? 'active' : ''}"
+            a href== backend_root_path 控制面板
           li.dropdown
             a.dropdown-toggle data-toggle="dropdown" href="#"
               | 客户管理
@@ -29,13 +31,16 @@ section.admin-application-navbar
               | 未读信息
           li.dropdown
             a.dropdown-toggle data-toggle="dropdown" href="#"
-              small 管理员
-              | ：大脑糊糊
+              small
+                | 管理员：
+                = @current_admin.nick_name
               span.caret
             ul.dropdown-menu role="menu"
               li
                 a href="#"  添加管理员
               li.divider
               li
-                a href="#"  注销
+                = link_to backend_sign_out_path, method: :delete, data: { confirm: '您确定注销账号？' } do
+                  i.fa.fa-sign-out
+                  | 注销
 
