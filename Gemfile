@@ -27,6 +27,5 @@ group :development, :test do
   gem 'pry-nav'
 end
 gem 'slim-rails'
-source 'https://rails-assets.org' do
-  gem 'rails-assets-bootstrap'
-end
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-sass'
