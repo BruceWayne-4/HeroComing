@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :admin do
+  namespace :backend, path: 'admin' do
     root 'home#index'
   end
 

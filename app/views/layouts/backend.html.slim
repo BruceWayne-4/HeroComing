@@ -1,5 +1,5 @@
 doctype html
-html
+html lang="zh-CN"
   head
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
@@ -7,8 +7,9 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
     title HeroComing
     = csrf_meta_tags
-    = stylesheet_link_tag    'admin/application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'admin/application', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'backend/application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'backend/application', 'data-turbolinks-track': 'reload'
 
   body
+    = render partial: 'navbar'
     = yield

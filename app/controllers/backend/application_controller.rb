@@ -1,6 +1,6 @@
-module Admin
+module Backend
   class ApplicationController < ActionController::Base
-    layout 'admin'
+    layout 'backend'
     protect_from_forgery with: :exception
   end
 end
