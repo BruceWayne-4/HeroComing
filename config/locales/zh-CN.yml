@@ -1,0 +1,4 @@
+zh-CN:
+  backend:
+    auth:
+      title: 管理后台-登录

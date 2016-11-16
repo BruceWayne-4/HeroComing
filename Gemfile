@@ -25,6 +25,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-rails'
   gem 'pry-nav'
+  gem 'i18n-debug'
 end
 gem 'slim-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
