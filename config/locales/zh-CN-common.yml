@@ -1,0 +1,11 @@
+zh-CN:
+  common:
+    action:
+      sign: 登录
+    tip:
+      mobile: 手机号码
+      password: 密码
+    button:
+      cancel: 重置
+      submit: 确定
+

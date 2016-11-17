@@ -7,40 +7,41 @@ section.admin-application-navbar
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a.navbar-brand href="#"  英雄来了
+        a.navbar-brand href== backend_root_path  = t('backend.application.navbar.hero_coming')
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         ul.nav.navbar-nav
           li class== navbar_class('home')
-            a href== backend_root_path 控制面板
+            a href== backend_root_path  = t('backend.application.navbar.home')
           li.dropdown
             a.dropdown-toggle data-toggle="dropdown" href="#"
-              | 客户管理
+              = t('backend.application.navbar.customers')
               span.caret
             ul.dropdown-menu role="menu"
               li
-                a href="#"  用户管理
+                a href="#"  = t('backend.application.navbar.users')
               li.divider
               li
-                a href="#"  英雄管理
+                a href="#"  = t('backend.application.navbar.heros')
           li
-            a href="#"  订单管理
+            a href="#"  = t('backend.application.navbar.orders')
         ul.nav.navbar-nav.navbar-right
           li
             a href="#"
               i.fa.fa-envelope-o
-              | 未读信息
+              = t('backend.application.navbar.messages')
           li.dropdown
             a.dropdown-toggle data-toggle="dropdown" href="#"
               small
-                | 管理员：
+                = t('backend.application.navbar.admin')
+                | ：
                 = @current_admin.nick_name
               span.caret
             ul.dropdown-menu role="menu"
               li
-                a href="#"  添加管理员
+                a href="#"  = t('backend.application.navbar.add_admin')
               li.divider
               li
-                = link_to backend_sign_out_path, method: :delete, data: { confirm: '您确定注销账号？' } do
+                = link_to backend_sign_out_path, method: :delete, data: { confirm: t('backend.application.navbar.confirm_sign_out') } do
                   i.fa.fa-sign-out
-                  | 注销
+                  = t('backend.application.navbar.sign_out')
 
