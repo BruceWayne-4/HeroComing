@@ -10,9 +10,9 @@ section.admin-application-navbar
         a.navbar-brand href== backend_root_path  = t('backend.application.navbar.hero_coming')
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         ul.nav.navbar-nav
-          li class== navbar_class('home')
+          li class== backend_li_active(li_names('home'), controller_name)
             a href== backend_root_path  = t('backend.application.navbar.home')
-          li.dropdown
+          li.dropdown class== backend_li_active(li_names('customers'), controller_name)
             a.dropdown-toggle data-toggle="dropdown" href="#"
               = t('backend.application.navbar.customers')
               span.caret
@@ -22,8 +22,11 @@ section.admin-application-navbar
               li.divider
               li
                 a href="#"  = t('backend.application.navbar.heros')
-          li
+          li class== backend_li_active(li_names('orders'), controller_name)
             a href="#"  = t('backend.application.navbar.orders')
+          li class== backend_li_active(li_names('admins'), controller_name)
+            a href== backend_admins_path  = t('backend.application.navbar.admins')
+
         ul.nav.navbar-nav.navbar-right
           li
             a href="#"
@@ -44,4 +47,3 @@ section.admin-application-navbar
                 = link_to backend_sign_out_path, method: :delete, data: { confirm: t('backend.application.navbar.confirm_sign_out') } do
                   i.fa.fa-sign-out
                   = t('backend.application.navbar.sign_out')
-

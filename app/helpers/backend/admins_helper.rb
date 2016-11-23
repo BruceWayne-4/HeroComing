@@ -1,0 +1,2 @@
+module Backend::AdminsHelper
+end
