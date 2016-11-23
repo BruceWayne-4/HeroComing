@@ -8,6 +8,7 @@ zh-CN:
         users: 用户管理
         heros: 英雄管理
         orders: 订单管理
+        admins: 管理员管理
         messages: 未读信息
         admin: 管理员
         add_admin: 添加管理员
@@ -17,3 +18,5 @@ zh-CN:
       title: 管理后台-登录
     home:
       index: 控制面板
+    admins:
+      index: 管理员管理
