@@ -1,0 +1,10 @@
+- @admins.each do |admin|
+  tr
+    td = admin.id
+    td = admin.mobile
+    td = admin.nick_name
+    td = admin.real_name
+    td
+      = link_to t('backend.table.action.show'), '', class: 'btn btn-info btn-split'
+      = link_to t('backend.table.action.edit'), '', class: 'btn btn-warning btn-split'
+      = link_to t('backend.table.action.destroy'), '', class: 'btn btn-danger btn-split'

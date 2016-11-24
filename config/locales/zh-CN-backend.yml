@@ -14,9 +14,19 @@ zh-CN:
         add_admin: 添加管理员
         confirm_sign_out: 您确定注销账号？
         sign_out: 注销
+        index: 列表
     auth:
       title: 管理后台-登录
     home:
       index: 控制面板
     admins:
       index: 管理员管理
+    search_form:
+      input: 请输入搜索的内容
+      btn: 搜索
+    table:
+      actions: 操作
+      action:
+        edit: 编辑
+        show: 详情
+        destroy: 删除
