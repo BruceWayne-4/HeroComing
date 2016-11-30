@@ -1,0 +1,17 @@
+doctype html
+html lang="zh-CN"
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="renderer" content="webkit"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    title = t('backend.' + controller_name + '.' + action_name )
+
+    = csrf_meta_tags
+    = stylesheet_link_tag    'backend/application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'backend/application', 'data-turbolinks-track': 'reload'
+
+  body
+    = render partial: 'navbar'
+    .container
+      = yield

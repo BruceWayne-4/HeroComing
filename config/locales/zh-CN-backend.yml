@@ -1,0 +1,32 @@
+zh-CN:
+  backend:
+    application:
+      navbar:
+        hero_coming: 英雄 来了
+        home: 控制面板
+        customers: 客户管理
+        users: 用户管理
+        heros: 英雄管理
+        orders: 订单管理
+        admins: 管理员管理
+        messages: 未读信息
+        admin: 管理员
+        add_admin: 添加管理员
+        confirm_sign_out: 您确定注销账号？
+        sign_out: 注销
+        index: 列表
+    auth:
+      title: 管理后台-登录
+    home:
+      index: 控制面板
+    admins:
+      index: 管理员管理
+    search_form:
+      input: 请输入搜索的内容
+      btn: 搜索
+    table:
+      actions: 操作
+      action:
+        edit: 编辑
+        show: 详情
+        destroy: 删除

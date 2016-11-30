@@ -1,0 +1,20 @@
+section#backend-sessions-sign
+  = form_tag backend_signing_path, class: 'form-horizontal'
+    .container
+      fieldset
+        legend.text-center = t('common.action.sign')
+
+        .form-group
+          label.col-lg-5.control-label for="mobile"  = t('common.tip.mobile')
+          .col-lg-4
+            = text_field_tag :mobile, params[:mobile], class: 'form-control', id: 'mobile', placeholder: t('common.tip.mobile')
+
+        .form-group
+          label.col-lg-5.control-label for="password"  = t('common.tip.password')
+          .col-lg-4
+            = password_field_tag :password, params[:password], class: 'form-control', id: 'password', placeholder: t('common.tip.password')
+
+        .form-group
+          .col-lg-7.col-lg-offset-5
+            button.btn.btn-default.btn-split type="reset" = t('common.button.cancel')
+            button.btn.btn-primary type="submit" = t('common.button.submit')

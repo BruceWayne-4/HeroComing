@@ -1,0 +1,14 @@
+section#backend-admins-index
+  = render partial: 'page_header'
+  = render partial: 'function_panel'
+
+  table.table.table-bordered.table-hover.table-condensed
+    thead
+      th.col-sm-2 = Admin.human_attribute_name :id
+      th.col-sm-3 = Admin.human_attribute_name :mobile
+      th.col-sm-2 = Admin.human_attribute_name :nick_name
+      th.col-sm-2 = Admin.human_attribute_name :real_name
+      th.col-sm-3 = t('backend.table.actions')
+    tbody
+      = render @admins
+      = paginate @admins

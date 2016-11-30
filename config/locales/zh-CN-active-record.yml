@@ -1,0 +1,8 @@
+zh-CN:
+  activerecord:
+    attributes:
+      admin:
+        id: 编号
+        mobile: 手机
+        nick_name: 昵称
+        real_name: 真实姓名
